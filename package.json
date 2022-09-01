@@ -1,6 +1,6 @@
 {
   "name": "@epfl/epfl-elements-styles",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Simple module to download the lastest version of the built EPFL elements library and keep everything except the JS files.",
   "files": [
     "dist",
@@ -10,7 +10,11 @@
     "prepare": "node downloadElements.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["epfl", "elements", "css"],
+  "keywords": [
+    "epfl",
+    "elements",
+    "css"
+  ],
   "author": "Juan Convers",
   "license": "MIT",
   "devDependencies": {
