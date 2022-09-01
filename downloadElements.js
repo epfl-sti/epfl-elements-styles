@@ -15,12 +15,23 @@ async function main () {
     });
     const data = body.data;
     const zip = new AdmZip(data);
+    
+    // Extract files and delete unused ones.
     zip.extractAllTo('tmp/', true);
     child_process.execSync('rm -r tmp/elements-dist-frontend/js/');
     child_process.execSync('rm -r tmp/elements-dist-frontend/package.json');
     child_process.execSync('rm -r tmp/elements-dist-frontend/.nojekyll');
     child_process.execSync('mv tmp/elements-dist-frontend/ dist/');
+
+    // Copy local style file
+    child_process.execSync('cp src/css/styles.css dist/css/');
+
+    // Combine files
+    child_process.execSync('cat dist/css/*.min.css dist/css/styles.css > dist/css/combined.css');
+
+    // Clean up.
     child_process.execSync('rm -r tmp/');
+
 }
 
 main().then(() => console.log('done'))
