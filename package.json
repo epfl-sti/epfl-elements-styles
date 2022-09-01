@@ -1,5 +1,5 @@
 {
-  "name": "epfl-elements-styles",
+  "name": "@epfl/epfl-elements-styles",
   "version": "1.0.0",
   "description": "Simple module to download the lastest version of the built EPFL elements library and keep everything except the JS files.",
   "files": [
