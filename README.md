@@ -12,21 +12,20 @@ The install command will execute the `downloadElements` script that will execute
 
 `.npmrc` example
 ```
-@epfl:registry = https://sti-nodejs.epfl.ch/
-registry = https://registry.npmjs.org/
-
+@epfl-sti:registry=https://npm.pkg.github.com
+registry=https://registry.npmjs.org/
 ```
 
 `.yarnrc` example
 ```
-"@epfl:registry" "https://sti-nodejs.epfl.ch/"
+@epfl-sti::registry" "https://sti-nodejs.epfl.ch/"
 ```
 
 Once you create those files, you can install the library by simply issue an `npm install` (or `yarn add`):
 
 
 ```
-npm install @epfl/epfl-elements-styles
+npm install @epfl-sti/epfl-elements-styles
 ```
 
 <i>Note: Don't forget the previous step. Without an .npmrc or .yarnrc file, the install process just won't work.</i>
