@@ -18,7 +18,7 @@ registry=https://registry.npmjs.org/
 
 `.yarnrc` example
 ```
-@epfl-sti::registry" "https://sti-nodejs.epfl.ch/"
+@epfl-sti::registry" "https://npm.pkg.github.com/"
 ```
 
 Once you create those files, you can install the library by simply issue an `npm install` (or `yarn add`):
