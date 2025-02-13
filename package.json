@@ -1,6 +1,6 @@
 {
   "name": "@epfl-sti/epfl-elements-styles",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Simple module to download the lastest version of the built EPFL elements library and keep everything except the JS files.",
   "files": [
     "dist",
