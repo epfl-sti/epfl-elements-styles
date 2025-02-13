@@ -29,4 +29,4 @@ Apache 2.0 License
 
 ## Author Information
 
-Juan Convers (juan.convers@epfl.ch)
+Juan Convers
