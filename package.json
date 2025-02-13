@@ -4,11 +4,11 @@
   "description": "Simple module to download the lastest version of the built EPFL elements library and keep everything except the JS files.",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE.md"
   ],
   "scripts": {
-    "prepare": "node downloadElements.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "node downloadElements.js"
   },
   "keywords": [
     "epfl",
@@ -16,7 +16,7 @@
     "css"
   ],
   "author": "Juan Convers",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "adm-zip": "^0.5.14",
     "axios": "^1.7.2"
@@ -24,9 +24,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/epfl-sti/epfl-elements-styles"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
   }
 }
